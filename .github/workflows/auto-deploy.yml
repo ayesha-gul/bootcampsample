@@ -21,7 +21,7 @@ jobs:
       - uses: actions/checkout@v2
 
       # Runs a single command using the runners shell
-      - name: insatlling Node
+      - name: installing Node
         uses: action/setup-node@v2-beta
         with:
           node-version: 14 
@@ -32,5 +32,4 @@ jobs:
       - name: deploying using surge
         run: surge ./ hello-vein.surge.sh --token "ef9e15034deb0c3e38268a2b3bc6abd9"
            
-          echo Add other actions to build,
-          echo test, and deploy your project.
+       
